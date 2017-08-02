@@ -49,6 +49,16 @@ echo '<a href="./index.php?p=' . $parts[1] . '"><i class="' . $parts[2] . '"></i
 
 Just jump to ``/Configs/Framework.config.php`` there you can change the required settings to run the Pag3r´s Framework correctly.
 
+
+# How to protect files?
+
+If you want to protect a file from directly accessing, just add to the top of the file this code
+```PHP
+if(!defined('Pag3r-Framework')) {
+   die('[Pag3r Framework] >> Direct access not permitted');
+}
+```
+
 # Updates
 
 I will go and add an Admin CMS soon, the PluginIncluder is currently not finished and i will work on this next. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
