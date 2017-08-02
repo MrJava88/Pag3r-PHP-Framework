@@ -61,6 +61,22 @@ if(!defined('Pag3r-Framework')) {
 }
 ```
 
+# How to create your own Plugin?
+
+Go to the ``/Plugins/`` folder and create a new directory for example ``/randomstring/``, it shuld looks like this right now ``/Plugins/randomstring/``, fine now go into the directory you created and create a new file called ``Plugin.pag3r.php`` it must be to have this name, this is your main plugin class where you have to write down your code. In our example we can write 
+```PHP
+function RANDOMSTRING_generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+```
+Try to name your function´s and method´s like your plugin name. Now we can use from anywhere our new function just call the function name like ``RANDOMSTRING_generateRandomString();``
+
 # Updates
 
 I will go and add an Admin CMS soon, the PluginIncluder is now working. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
