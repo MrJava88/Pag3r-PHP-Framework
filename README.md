@@ -8,6 +8,8 @@ This Framework is for experienced and also inexperienced developer, you can easy
 <p>Simple and easy use</p>
 <p>Open source</p>
 <p>Import Designs with 1 click or create your own</p>
+<p>Plugin System</p>
+<p>Admin CMS</p>
 
 <b>... and much more</b>
 
@@ -61,4 +63,4 @@ if(!defined('Pag3r-Framework')) {
 
 # Updates
 
-I will go and add an Admin CMS soon, the PluginIncluder is currently not finished and i will work on this next. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
+I will go and add an Admin CMS soon, the PluginIncluder is now working. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
