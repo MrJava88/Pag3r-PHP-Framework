@@ -1,7 +1,7 @@
 # Pag3r-PHP-Framework
 
 Small and easy to use open source PHP Framework.
-This Frameowrk is for experienced and also inexperienced developer, you can easy create and design your website, also manage and work faster.
+This Framework is for experienced and also inexperienced developer, you can easy create and design your website, also manage and work faster.
 
 # Why use Pag3r?
 
@@ -51,4 +51,4 @@ Just jump to ``/Configs/Framework.config.php`` there you can change the required
 
 # Updates
 
-I will go and add an Admin CMS soon, the PluginIncluder is currently not finished and i will work on this next. This Frameowrk is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
+I will go and add an Admin CMS soon, the PluginIncluder is currently not finished and i will work on this next. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
