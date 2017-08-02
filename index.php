@@ -4,7 +4,7 @@
 require_once('./Configs/Framework.config.php');
 require_once('./Plugins/PluginIncluder.php');
 
-PAG3R_IncludePlugins('./Plugins/', false); #PluginFoulder, Debuglog
+PAG3R_IncludePlugins('./Plugins/', false); #PluginFolder, Debuglog
 
 require_once('./Designs/' . $page_design . 'headstyle.php');
 
