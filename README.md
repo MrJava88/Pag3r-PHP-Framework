@@ -1,3 +1,5 @@
+![pag3r framework](https://user-images.githubusercontent.com/20287964/28875703-c4e38f6c-7796-11e7-9008-323905fbfb76.png)
+
 # Pag3r-PHP-Framework
 
 Small and easy to use open source PHP Framework.
@@ -12,6 +14,13 @@ This Framework is for experienced and also inexperienced developer, you can easy
 <p>Admin CMS</p>
 
 <b>... and much more</b>
+
+
+# Download & Releases
+
+- [x] Latest Release: https://github.com/MrJava88/Pag3r-PHP-Framework/releases/latest
+
+- [x] Release V 1.1: https://github.com/MrJava88/Pag3r-PHP-Framework/releases/tag/v1.1
 
 # How to register & add new Pages?
 
