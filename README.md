@@ -1,34 +1,29 @@
 ![pag3r framework](https://user-images.githubusercontent.com/20287964/28875703-c4e38f6c-7796-11e7-9008-323905fbfb76.png)
 
-# Pag3r-PHP-Framework
+# Pag3r PHP Framework
 
 Small and easy to use open source PHP Framework.
-This Framework is for experienced and also inexperienced developer, you can easy create and design your website, also manage and work faster.
+
+Thes Pag3r PHP Framework is made with experienced and also inexperienced developers in mind, you can easily and quickly create, design and manage your website.
 
 # Why use Pag3r?
 
-<p>Simple and easy use</p>
-<p>Open source</p>
-<p>Import Designs with 1 click or create your own</p>
-<p>Plugin System</p>
-<p>Admin CMS</p>
+- Simple and easy use
+- Open source
+- Import Designs with 1 click or create your own
+- Plugin System
+- Admin CMS (Work In Progress)
 
-<b>... and much more</b>
-
-
-# Download & Releases
+# Downloads & Releases
 
 - [x] Latest Release: https://github.com/MrJava88/Pag3r-PHP-Framework/releases/latest
 
 - [x] Release V 1.1: https://github.com/MrJava88/Pag3r-PHP-Framework/releases/tag/v1.1
 
-# How to register & add new Pages?
+# How to Register & Add New Pages?
 
-First navigate to ``/Configs/Pages.config.php`` add to the ``$PAG3R_PAGES`` Array your new page like this 
-```PHP
-$PAG3R_PAGES = array("Page Name"=>"Page Name:filename.php:icon-chevron-right");
-```
-if you want to add more pages just do it like this 
+Within the ``/Configs/Pages.config.php``, you can add your pages to the ``$PAG3R_PAGES`` array:
+
 ```PHP
 $PAG3R_PAGES = array(
 "Page Name"=>"Page Name:filename.php:icon-chevron-right",
@@ -36,11 +31,13 @@ $PAG3R_PAGES = array(
 "Page Name3"=>"Page Name3:filename3.php:icon-chevron-right"
 );
 ```
-Now navigate to ``/Pages/`` and create your new file for example ``filename.php`` stands in our example for "Page Name", we had added before.
 
-# How to edit or change the "navbar" ?
+Now navigate to ``/Pages/`` and create your new file, e.g. ``filename.php``, which stands for "Page Name", because we've just added to the array.
 
-If you like you can easy edit the navigationbar where the pages are displayed, for that just go to ``/Designs/*YOUR DESIGN*/navbar.php`` if you are using the Default design the path is ``/Designs/Default/navbar.php``, the Default ``navbar.php`` source code is
+# How to Edit or Change the Navbar?
+
+If you like, you can easily edit the navigation bar, where the pages are displayed. In order to do so, create a new folder, e.g. `YOURDESIGN` in ``/Designs/`` and then edit the ``/Designs/YOURDESIGN/navbar.php``. If you are using the default design, the path is ``/Designs/Default/navbar.php``. The default ``navbar.php`` source code is as follows:
+
 ```PHP
 require_once('./Configs/Pages.config.php');
 
@@ -60,21 +57,22 @@ echo '<a href="./index.php?p=' . $parts[1] . '"><i class="' . $parts[2] . '"></i
 
 Just jump to ``/Configs/Framework.config.php`` there you can change the required settings to run the Pag3r´s Framework correctly.
 
+# How to Protect the Files?
 
-# How to protect files?
+If you want to protect a file from directly accessing, just add to the top of the file this code:
 
-If you want to protect a file from directly accessing, just add to the top of the file this code
 ```PHP
 if(!defined('Pag3r-Framework')) {
    die('[Pag3r Framework] >> Direct access not permitted');
 }
 ```
 
-# How to create your own Plugin?
+# How to Create My Own Plugin?
 
-Go to the ``/Plugins/`` folder and create a new directory for example ``/randomstring/``, it shuld looks like this right now ``/Plugins/randomstring/``, fine now go into the directory you created and create a new file called ``Plugin.pag3r.php`` it must be to have this name, this is your main plugin class where you have to write down your code. In our example we can write 
+Go to the ``/Plugins/`` folder and create a new directory , e.g. ``/YOURPLUGIN/``. Then navigate in to the ``/Plugins/YOURPLUGIN/`` directory and create the file ``Plugin.pag3r.php``. This will be your main plugin class, where you write your code, for example:
+
 ```PHP
-function RANDOMSTRING_generateRandomString($length = 10) {
+function YOURPLUGIN_generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
     $randomString = '';
@@ -84,8 +82,9 @@ function RANDOMSTRING_generateRandomString($length = 10) {
     return $randomString;
 }
 ```
-Try to name your function´s and method´s like your plugin name. Now we can use from anywhere our new function just call the function name like ``RANDOMSTRING_generateRandomString();``
+
+In order to avoid conflicts, please prefix your function name with the name of your Plugin, like in this example. Now you can use your new function from everywhere; Just call ``YOURPLUGIN_generateRandomString();``.
 
 # Updates
 
-I will go and add an Admin CMS soon, the PluginIncluder is now working. This Framework is for Experienced and also inexperienced programmers, you can easy create and design your Website, also manage and work faster.
+I will go and add an Admin CMS soon, the PluginIncluder is now working.
